@@ -5,7 +5,7 @@ const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="z-50 bg-white/95 backdrop-blur-md">
+        <nav className="relative z-50 bg-white/95 backdrop-blur-md">
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-20 py-4">
                     <div className="flex-shrink-0">
@@ -54,13 +54,13 @@ const Navigation = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-lg"
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                        className="z-50 md:hidden absolute top-20 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-lg"
                     >
-                        <div className="container mx-auto px-4 py-6 space-y-4">
+                        <div className="z-50 container mx-auto px-4 py-6 space-y-4">
                             <button className="w-full text-gray-700 hover:text-gray-900 px-6 py-2 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-200 font-semibold">
                                 Login
                             </button>
