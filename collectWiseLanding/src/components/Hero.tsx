@@ -58,9 +58,10 @@ const Hero = () => {
             transition: {
                 duration: 0.7,
                 ease: "easeOut",
-                type: "spring",
+                type: "easeInOut",
                 damping: 20,
                 stiffness: 100
+
             }
         }
     };
@@ -73,9 +74,10 @@ const Hero = () => {
             transition: {
                 duration: 0.7,
                 ease: "easeOut",
-                type: "spring",
+                type: "easeInOut",
                 damping: 20,
                 stiffness: 100
+
             }
         }
     };
@@ -142,7 +144,9 @@ const Hero = () => {
                 <motion.div 
                     className="mt-24 sm:mt-20 md:mt-24 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 max-w-4xl mx-auto px-4 sm:px-6"
                     variants={containerVariants}
+                    key={1}
                 >
+
                     {[
                         {
                             value: "2X",
