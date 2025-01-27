@@ -56,8 +56,11 @@ const Hero = () => {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.5,
-                ease: "easeOut"
+                duration: 0.7,
+                ease: "easeOut",
+                type: "spring",
+                damping: 20,
+                stiffness: 100
             }
         }
     };
@@ -68,8 +71,11 @@ const Hero = () => {
             opacity: 1,
             scale: 1,
             transition: {
-                duration: 0.5,
-                ease: "easeOut"
+                duration: 0.7,
+                ease: "easeOut",
+                type: "spring",
+                damping: 20,
+                stiffness: 100
             }
         }
     };
@@ -125,8 +131,9 @@ const Hero = () => {
                     <motion.button 
                         className="bg-black hover:bg-gray-800 text-white text-base sm:text-lg font-semibold px-4 sm:px-8 py-2 sm:py-2 rounded-lg shadow-sm transition-all duration-200 hover:shadow-md"
                         variants={itemVariants}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        style={{ willChange: 'transform' }}
                     >
                         Request a Demo
                     </motion.button>
@@ -157,7 +164,8 @@ const Hero = () => {
                             key={index}
                             className="p-4 sm:p-6 rounded-xl bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300"
                             variants={statsVariants}
-                            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+                            whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+                            style={{ willChange: 'transform' }}
                         >
                             <div className="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">{stat.value}</div>
                             <div className="text-base sm:text-lg text-gray-700 font-medium">{stat.label}</div>
