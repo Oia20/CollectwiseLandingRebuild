@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 
 const RequestDemoForm = () => {
     // Reuse the tiles animation logic from Hero
@@ -41,18 +40,6 @@ const RequestDemoForm = () => {
         return () => clearInterval(interval);
     }, []);
 
-    const formVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.7,
-                ease: "easeOut"
-            }
-        }
-    };
-
     return (
         <div className="relative min-h-screen overflow-hidden bg-white">
             {/* Animated tiles background */}
@@ -82,11 +69,8 @@ const RequestDemoForm = () => {
             <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-br from-white/95 via-white/70 to-blue-50/40 z-10" />
 
             {/* Form Container */}
-            <motion.div 
+            <div 
                 className="relative z-20 container mx-auto px-4 py-16 min-h-screen flex items-center justify-center"
-                variants={formVariants}
-                initial="hidden"
-                animate="visible"
             >
                 <div className="bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl p-10 w-full max-w-2xl border border-white/20">
                     <h1 className="text-4xl font-bold text-gray-900 mb-2 text-center">Request a Demo</h1>
@@ -162,7 +146,7 @@ const RequestDemoForm = () => {
                         </div>
                     </form>
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 };
