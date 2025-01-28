@@ -89,7 +89,7 @@ const Hero = () => {
                     {tiles.map((tile, i) => (
                         <div
                             key={i}
-                            className="aspect-square bg-gray-400/30 rounded-md transition-all duration-4000"
+                            className="aspect-square bg-blue-600/40 rounded-md transition-all duration-4000"
                             style={{
                                 animation: tile.animation ? `${tile.animation} ${tile.delay}s` : 'none',
                                 willChange: 'opacity'
@@ -101,13 +101,13 @@ const Hero = () => {
 
             <style>{`
                 @keyframes tile-darken {
-                    0%, 100% { background-color: rgba(156, 163, 175, 0.3); }
-                    50% { background-color: rgba(17, 24, 39, 0.6); }
+                    0%, 100% { background-color: rgba(37, 99, 235, 0.4); }
+                    50% { background-color: rgba(30, 58, 138, 0.7); }
                 }
             `}</style>
 
-            {/* Gradient overlay (blur the tiles) */}
-            <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-white/95 via-white/50 to-blue-200/95 z-10" />
+            {/* Gradient overlay (bluring the tilezies) */}
+            <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-white/95 via-white/50 to-white z-10" />
 
             <motion.div 
                 className="relative z-20 container mx-auto px-4 pt-16 sm:pt-20 md:pt-24 pb-16 sm:pb-20 md:pb-24 text-center"
@@ -171,7 +171,7 @@ const Hero = () => {
                             whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
                             style={{ willChange: 'transform' }}
                         >
-                            <div className="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">{stat.value}</div>
+                            <div className="text-4xl sm:text-5xl font-bold text-blue-900 mb-2">{stat.value}</div>
                             <div className="text-base sm:text-lg text-gray-700 font-medium">{stat.label}</div>
                             <div className="text-xs sm:text-sm text-gray-600 mt-1 sm:mt-2">{stat.subtext}</div>
                         </motion.div>
