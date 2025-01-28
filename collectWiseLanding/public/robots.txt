@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://collectwiselandingrebuild.pages.dev/sitemap-index.xml
