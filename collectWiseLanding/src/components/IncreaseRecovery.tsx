@@ -20,17 +20,17 @@ const IncreaseRecoverySection = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="relative overflow-hidden bg-gradient-to-b from-white via-blue-50/50 to-white py-16 sm:py-20 md:py-24 lg:py-32">
-            <div className="absolute inset-0 overflow-hidden">
+        <div ref={sectionRef} className="relative overflow-hidden bg-gradient-to-b from-white via-blue-50/50 to-white py-12 sm:py-16 md:py-20 lg:py-24">
+            <div className="absolute inset-x-0 inset-y-8 overflow-hidden">
                 <div className="absolute -left-4 top-1/4 w-48 sm:w-72 h-48 sm:h-72 bg-blue-900/10 rounded-full mix-blend-multiply filter blur-lg opacity-50 animate-pulse transform transition-transform duration-1000 hover:translate-y-1" />
                 <div className="absolute left-1/3 top-1/2 w-32 sm:w-48 h-32 sm:h-48 bg-purple-600/10 rounded-full mix-blend-multiply filter blur-lg opacity-40 transform transition-transform duration-1000 hover:-translate-y-1" />
                 <div className="absolute -right-4 bottom-1/4 w-48 sm:w-72 h-48 sm:h-72 bg-blue-800/10 rounded-full mix-blend-multiply filter blur-lg opacity-50 transform transition-transform duration-1000 hover:translate-y-1" />
             </div>
 
             <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-2 sm:gap-4 lg:gap-16 items-center">  
-                    <div className="relative order-1 flex justify-center lg:justify-start -mb-8 sm:mb-0">  
-                        <div className="relative h-[350px] sm:h-[500px] md:h-[600px] w-full max-w-[350px] lg:max-w-none"> 
+                <div className="grid lg:grid-cols-2 gap-2 sm:gap-4 lg:gap-12 items-center">  
+                    <div className="relative order-1 lg:order-1 flex justify-center -mb-8 sm:mb-0">  
+                        <div className="relative h-[350px] sm:h-[500px] md:h-[600px] w-full max-w-[350px]"> 
                             <div className="absolute left-[10%] lg:left-0 top-0 w-48 sm:w-56 md:w-64 rounded-3xl shadow-2xl transform transition-all duration-700 hover:-translate-y-2 hover:rotate-1 -rotate-2">  
                                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-900/20 to-purple-600/20 rounded-[2rem] blur-lg opacity-60" />
                                 <img 
@@ -60,7 +60,7 @@ const IncreaseRecoverySection = () => {
                         </div>
                     </div>
 
-                    <div className="lg:pl-12 order-2 text-center lg:text-left pt-0 sm:pt-4"> 
+                    <div className="lg:pl-12 order-2 lg:order-2 text-center lg:text-left pt-0 sm:pt-4"> 
                         <div className="relative mb-6">
                             <h2 className={`relative text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2 transition-all duration-700 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
                                 <span className="relative inline-block">
