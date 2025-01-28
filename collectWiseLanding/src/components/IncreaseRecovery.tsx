@@ -50,7 +50,9 @@ const IncreaseRecoverySection = () => {
                             Maximize your collection success rates and increase your profits with our data-driven AI system. We know exactly how to contact your debtors, what channels to target, and when to escalate while still being respectful.
                         </p>
 
-                        <button className="group relative bg-blue-900 hover:bg-blue-800 text-white text-base sm:text-lg font-semibold px-6 sm:px-8 py-3 rounded-lg shadow-sm transition-all duration-300 hover:shadow-[0_0_25px_rgba(30,58,138,0.4)] transform hover:scale-[1.03] active:scale-[0.98] overflow-hidden">
+                        <button className="group relative bg-blue-900 hover:bg-blue-800 text-white text-base sm:text-lg font-semibold px-6 sm:px-8 py-3 rounded-lg shadow-sm transition-all duration-300 hover:shadow-[0_0_25px_rgba(30,58,138,0.4)] transform hover:scale-[1.03] active:scale-[0.98] overflow-hidden" onClick={() => {
+                            window.location.href = '/requestdemo';
+                        }}>
                             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             <span className="relative inline-flex items-center">
                                 Request Demo Today

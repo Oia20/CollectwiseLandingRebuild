@@ -136,9 +136,14 @@ const Hero = () => {
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         style={{ willChange: 'transform' }}
+                        onClick={() => {
+                            window.location.href = '/requestdemo';
+                        }}
                     >
                         Request a Demo
+
                     </motion.button>
+
                 </div>
 
                 <motion.div 

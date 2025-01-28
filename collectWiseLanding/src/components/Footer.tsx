@@ -5,25 +5,24 @@ const Footer = () => {
         <>
             <div className="w-full border-t border-gray-200" />
             
-            <footer className="relative">
+            <footer className="relative py-4">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col space-y-6">
                         <div className="flex justify-center">
                             <img 
                                 src="https://pgtgy4em2f.ufs.sh/f/oMW3imFO9N6PKnuv7pLwFCltpuzgUqMoVRaTJex0Ldjr5BN1" 
                                 alt="CollectWise Logo" 
-                                className="h-8 w-auto mt-2"
+                                className="h-6 sm:h-8 w-auto mt-2"
                             />
                         </div>
 
-                        <div className="flex justify-between items-center">
-                            <div>
+                        <div className="flex flex-row justify-center items-center space-x-4 sm:space-x-8">
+                            <div className="flex-shrink-0">
                                 <a 
                                     href="https://www.linkedin.com/company/trycollectwise/"
                                     className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
                                     aria-label="LinkedIn"
                                 >
-
                                     <svg 
                                         className="h-6 w-6" 
                                         fill="currentColor" 
@@ -34,22 +33,20 @@ const Footer = () => {
                                 </a>
                             </div>
 
-                            <div className="flex space-x-8">
-                                <img 
-                                    src="https://pgtgy4em2f.ufs.sh/f/oMW3imFO9N6PuB5VZCvXIC2kTyiXdLE8DW5n3Bbave70hP4s" 
-                                    alt="HIPAA Compliant" 
-                                    className="h-16 w-auto"
-                                />
-                                <img 
-                                    src="https://pgtgy4em2f.ufs.sh/f/oMW3imFO9N6PKWdclnwFCltpuzgUqMoVRaTJex0Ldjr5BN13" 
-                                    alt="AICPA SOC Compliant" 
-                                    className="h-16 w-auto"
-                                />
-                            </div>
+                            <img 
+                                src="https://pgtgy4em2f.ufs.sh/f/oMW3imFO9N6PuB5VZCvXIC2kTyiXdLE8DW5n3Bbave70hP4s" 
+                                alt="HIPAA Compliant" 
+                                className="h-10 sm:h-16 w-auto"
+                            />
+                            <img 
+                                src="https://pgtgy4em2f.ufs.sh/f/oMW3imFO9N6PKWdclnwFCltpuzgUqMoVRaTJex0Ldjr5BN13" 
+                                alt="AICPA SOC Compliant" 
+                                className="h-10 sm:h-16 w-auto"
+                            />
                         </div>
 
                         <div className="flex justify-center">
-                            <p className="text-gray-600 text-sm mb-2">
+                            <p className="text-gray-600 text-xs sm:text-sm mb-2 text-center">
                                 © {new Date().getFullYear()} CollectWise. All rights reserved.
                             </p>
                         </div>
