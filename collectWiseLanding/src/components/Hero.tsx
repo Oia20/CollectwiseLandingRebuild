@@ -34,7 +34,7 @@ const Hero = () => {
             if (Math.random() > 0.3) {
                 animateTile();
             }
-        }, 300 + Math.random() * 700);
+        }, 250 + Math.random() * 400);
 
         return () => clearInterval(interval);
     }, []);
