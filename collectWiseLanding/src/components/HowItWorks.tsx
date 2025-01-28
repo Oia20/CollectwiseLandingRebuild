@@ -6,7 +6,28 @@ const CollectionProcess = () => {
 
     const steps = [
         {
-            icon: "🤖",
+            icon: (
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 2C8.73478 2 8.48043 2.10536 8.29289 2.29289C8.10536 2.48043 8 2.73478 8 3V4H7C6.20435 4 5.44129 4.31607 4.87868 4.87868C4.31607 5.44129 4 6.20435 4 7V17C4 17.7956 4.31607 18.5587 4.87868 19.1213C5.44129 19.6839 6.20435 20 7 20H17C17.7956 20 18.5587 19.6839 19.1213 19.1213C19.6839 18.5587 20 17.7956 20 17V7C20 6.20435 19.6839 5.44129 19.1213 4.87868C18.5587 4.31607 17.7956 4 17 4H16V3C16 2.73478 15.8946 2.48043 15.7071 2.29289C15.5196 2.10536 15.2652 2 15 2C14.7348 2 14.4804 2.10536 14.2929 2.29289C14.1054 2.48043 14 2.73478 14 3V4H10V3C10 2.73478 9.89464 2.48043 9.70711 2.29289C9.51957 2.10536 9.26522 2 9 2Z" fill="url(#paint0_linear)" />
+                    <path d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z" fill="url(#paint1_linear)" />
+                    <path d="M12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15Z" fill="white" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M12 10.5C11.1716 10.5 10.5 11.1716 10.5 12C10.5 12.8284 11.1716 13.5 12 13.5C12.8284 13.5 13.5 12.8284 13.5 12C13.5 11.1716 12.8284 10.5 12 10.5ZM9.5 12C9.5 10.6193 10.6193 9.5 12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12Z" fill="url(#paint2_linear)" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="4" y1="11" x2="20" y2="11" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#3B82F6" />
+                            <stop offset="1" stopColor="#2563EB" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="8" y1="13" x2="16" y2="13" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#60A5FA" />
+                            <stop offset="1" stopColor="#3B82F6" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear" x1="9.5" y1="12" x2="14.5" y2="12" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#2563EB" />
+                            <stop offset="1" stopColor="#1D4ED8" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            ),
             title: "AI Analysis",
             description: "Our AI analyzes debtor data and payment history to determine optimal collection strategies",
             details: [
@@ -16,7 +37,17 @@ const CollectionProcess = () => {
             ]
         },
         {
-            icon: "💬",
+            icon: (
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="url(#paint0_linear)" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#3B82F6" />
+                            <stop offset="1" stopColor="#2563EB" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            ),
             title: "Smart Communication",
             description: "Automated outreach through the most effective channels at the perfect time",
             details: [
@@ -26,7 +57,32 @@ const CollectionProcess = () => {
             ]
         },
         {
-            icon: "🤝",
+            icon: (
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 13C15.71 13 15.38 13.07 15.03 13.18C16.19 14.16 17 15.4 17 17V20H23V17C23 14.82 18.83 13 16 13Z" fill="url(#paint0_linear)" />
+                    <path d="M8 13C5.17 13 1 14.82 1 17V20H15V17C15 14.82 10.83 13 8 13Z" fill="url(#paint1_linear)" />
+                    <path d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z" fill="url(#paint2_linear)" />
+                    <path d="M16 12C18.2091 12 20 10.2091 20 8C20 5.79086 18.2091 4 16 4C13.7909 4 12 5.79086 12 8C12 10.2091 13.7909 12 16 12Z" fill="url(#paint3_linear)" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="15.03" y1="16.5" x2="23" y2="16.5" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#3B82F6" />
+                            <stop offset="1" stopColor="#2563EB" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="1" y1="16.5" x2="15" y2="16.5" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#3B82F6" />
+                            <stop offset="1" stopColor="#2563EB" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear" x1="4" y1="8" x2="12" y2="8" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#3B82F6" />
+                            <stop offset="1" stopColor="#2563EB" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear" x1="12" y1="8" x2="20" y2="8" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#3B82F6" />
+                            <stop offset="1" stopColor="#2563EB" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            ),
             title: "Payment Resolution",
             description: "Flexible payment plans and settlement options to maximize recovery",
             details: [
@@ -36,7 +92,17 @@ const CollectionProcess = () => {
             ]
         },
         {
-            icon: "📊",
+            icon: (
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z" fill="url(#paint0_linear)" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="3" y1="12" x2="21" y2="12" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#3B82F6" />
+                            <stop offset="1" stopColor="#2563EB" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            ),
             title: "Performance Analytics",
             description: "Track collection progress and success rates through our dashboard",
             details: [
