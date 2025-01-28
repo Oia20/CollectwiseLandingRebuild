@@ -73,7 +73,7 @@ const BrandImageSection = () => {
                                     <div className="flex items-center justify-center">
                                         <div className="text-center">
                                             <div className="text-base font-semibold text-gray-900">CollectWise Support</div>
-                                            <div className="text-xs text-green-600">Online</div>
+                                            <div className="text-xs text-green-800">Online</div>
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@ const BrandImageSection = () => {
                                     </div>
 
                                     <div className="flex flex-row-reverse items-start gap-1 animate-fade-in">
-                                        <div className="bg-blue-500 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
+                                        <div className="bg-blue-600 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
                                             <p className="text-[15px] text-white">I don't think I can pay the entire balance today.</p>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@ const BrandImageSection = () => {
                                     </div>
 
                                     <div className="flex flex-row-reverse items-start gap-1 animate-fade-in">
-                                        <div className="bg-blue-500 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
+                                        <div className="bg-blue-600 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
                                             <p className="text-[15px] text-white">Yes</p>
                                         </div>
                                     </div>
@@ -116,7 +116,7 @@ const BrandImageSection = () => {
                                     </div>
 
                                     <div className="flex flex-row-reverse items-start gap-1 animate-fade-in">
-                                        <div className="bg-blue-500 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
+                                        <div className="bg-blue-600 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
                                             <p className="text-[15px] text-white">Okay thank you so much! I appreciate your assistance</p>
                                         </div>
                                     </div>
@@ -187,7 +187,7 @@ const BrandImageSection = () => {
                                             <div className="flex items-center justify-center">
                                                 <div className="text-center">
                                                     <div className="text-base font-semibold text-gray-900">CollectWise Support</div>
-                                                    <div className="text-xs text-green-600">Online</div>
+                                                    <div className="text-xs text-green-800">Online</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -202,7 +202,7 @@ const BrandImageSection = () => {
 
                                             {/* Customer Message 1 */}
                                             <div className="flex flex-row-reverse items-start gap-1 animate-fade-in">
-                                                <div className="bg-blue-500 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
+                                                <div className="bg-blue-600 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
                                                     <p className="text-[15px] text-white">I don't think I can pay the entire balance today.</p>
                                                 </div>
                                             </div>
@@ -216,7 +216,7 @@ const BrandImageSection = () => {
 
                                             {/* Customer Message 2 */}
                                             <div className="flex flex-row-reverse items-start gap-1 animate-fade-in">
-                                                <div className="bg-blue-500 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
+                                                <div className="bg-blue-600 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
                                                     <p className="text-[15px] text-white">Yes</p>
                                                 </div>
                                             </div>
@@ -226,17 +226,17 @@ const BrandImageSection = () => {
                                                 <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-2 shadow-sm max-w-[85%]">
                                                     <div className="text-[15px] text-gray-800">
                                                         You can pay through the link provided here: 
-                                                        <a href="#" className="text-blue-600 hover:underline break-all">
+                                                        <p className="text-blue-600 hover:underline break-all">
                                                             https://app.collectwise.com/invoicepayments/
-                                                        </a>
-                                                        . Let me know if you have any other questions!
+                                                        </p>
+                                                        Let me know if you have any other questions!
                                                     </div>
                                                 </div>
                                             </div>
 
                                             {/* Customer Message 3 */}
                                             <div className="flex flex-row-reverse items-start gap-1 animate-fade-in">
-                                                <div className="bg-blue-500 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
+                                                <div className="bg-blue-600 rounded-2xl rounded-tr-sm px-4 py-2 shadow-sm max-w-[85%]">
                                                     <p className="text-[15px] text-white">Okay thank you so much! I appreciate your assistance</p>
                                                 </div>
                                             </div>
