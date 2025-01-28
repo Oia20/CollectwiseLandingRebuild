@@ -72,7 +72,7 @@ const BrandImageSection = () => {
                                 <div className="absolute top-6 w-full bg-gray-50 z-10 px-4 py-2 border-b border-gray-200">
                                     <div className="flex items-center justify-center">
                                         <div className="text-center">
-                                            <div className="text-base font-semibold text-gray-900">CollectWise Support</div>
+                                            <div className="text-base font-semibold text-gray-900">CollectWise</div>
                                             <div className="text-xs text-green-800">Online</div>
                                         </div>
                                     </div>

@@ -10,23 +10,23 @@ const Navigation = () => {
                 <div className="flex items-center justify-between h-20 py-4">
                     <div className="flex-shrink-0">
                         <img 
-                            src="https://framerusercontent.com/images/HXDb1FtwEOXs111cb9tCkLalCA.png?scale-down-to=512" 
+                            src="https://pgtgy4em2f.ufs.sh/f/oMW3imFO9N6PKnuv7pLwFCltpuzgUqMoVRaTJex0Ldjr5BN1" 
                             alt="CollectWise Logo" 
-                            className="h-40 w-auto"
+                            className="h-8 w-auto"
                         />
                     </div>
 
-                    {/* Desktop Nav */}
+
                     <div className="hidden md:flex items-center space-x-4">
                         <button className="text-gray-700 hover:text-gray-900 px-6 py-2 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-200 font-semibold">
                             Login
                         </button>
                         <button className="bg-black hover:bg-gray-800 text-white px-6 py-2 rounded-lg shadow-sm transition-all duration-200 hover:shadow-md font-semibold">
-                            Schedule a Demo
+                            Request Demo
                         </button>
                     </div>
 
-                    {/* Hamburger */}
+
                     <button 
                         className="md:hidden relative z-50 flex flex-col justify-center items-center w-10 h-10"
                         onClick={() => setIsOpen(!isOpen)}
@@ -50,7 +50,6 @@ const Navigation = () => {
                 </div>
             </div>
 
-            {/* Mobile Nav */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
@@ -65,10 +64,11 @@ const Navigation = () => {
                                 Login
                             </button>
                             <button className="w-full bg-black hover:bg-gray-800 text-white px-6 py-2 rounded-lg shadow-sm transition-all duration-200 hover:shadow-md font-semibold">
-                                Schedule a Demo
+                                Request Demo
                             </button>
                         </div>
                     </motion.div>
+
                 )}
             </AnimatePresence>
         </nav>
