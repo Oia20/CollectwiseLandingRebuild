@@ -3,7 +3,6 @@ import React from 'react';
 const Footer = () => {
     return (
         <>
-            {/* Dividing line above footer */}
             <div className="w-full border-t border-gray-200" />
             
             <footer className="relative">
@@ -17,7 +16,6 @@ const Footer = () => {
                             />
                         </div>
 
-                        {/* Middle: LinkedIn and Badges */}
                         <div className="flex justify-between items-center">
                             <div>
                                 <a 
@@ -36,7 +34,6 @@ const Footer = () => {
                                 </a>
                             </div>
 
-                            {/* Right: Compliance Badges */}
                             <div className="flex space-x-8">
                                 <img 
                                     src="https://pgtgy4em2f.ufs.sh/f/oMW3imFO9N6PuB5VZCvXIC2kTyiXdLE8DW5n3Bbave70hP4s" 
@@ -51,7 +48,6 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Bottom: Copyright */}
                         <div className="flex justify-center">
                             <p className="text-gray-600 text-sm mb-2">
                                 © {new Date().getFullYear()} CollectWise. All rights reserved.

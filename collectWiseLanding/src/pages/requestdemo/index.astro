@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.tsx';
+import RequestDemoForm from '../../components/RequestDemoForm.tsx';
+---
+
+
+
+<Layout>
+    <Navigation currentPath="/requestdemo" client:load/>
+    <RequestDemoForm client:load/>
+</Layout>
