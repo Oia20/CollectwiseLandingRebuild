@@ -67,11 +67,19 @@ const TrustedBySlider = () => {
                     margin: 0 40px;
                 }
 
+                @media (max-width: 768px) {
+                    .slider-container {
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                }
+
                 .slide-track {
                     display: flex;
                     animation: scroll 40s linear infinite;
                     width: fit-content;
                 }
+
 
                 @keyframes scroll {
                     0% {
