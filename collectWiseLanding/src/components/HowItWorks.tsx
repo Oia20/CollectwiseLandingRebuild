@@ -156,21 +156,48 @@ const CollectionProcess = () => {
 
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
                     <div className="w-full lg:w-1/3 relative">
-                        <div className="absolute left-8 top-8 bottom-8 w-px bg-gray-200 hidden lg:block">
-                            <div 
-                                className="absolute top-0 w-px bg-blue-600 transition-all duration-300"
-                                style={{ 
-                                    height: `${getProgressHeight()}%`,
-                                    boxShadow: '0 0 10px rgba(37, 99, 235, 0.3)'
-                                }}
-                            />
+                        <div className="lg:hidden absolute left-8 top-8 h-[calc(100%-4rem)] w-1 bg-gray-200">
+                            {steps.map((_, index) => (
+                                <div 
+                                    key={index} 
+                                    className="absolute w-3 h-3 -left-1"
+                                    style={{
+                                        top: `calc(${(index * 100) / (steps.length - 1)}%)`,
+                                        transform: 'translateY(-50%)'
+                                    }}
+                                >
+                                    <div 
+                                        className={`w-full h-full rounded-full transition-all duration-300 ${
+                                            index <= activeStep 
+                                                ? 'bg-blue-600 shadow-md shadow-blue-200' 
+                                                : 'bg-white border-2 border-gray-200'
+                                        }`}
+                                    />
+                                    {index < steps.length - 1 && (
+                                        <div 
+                                            className="absolute top-1.5 left-1 w-1 bg-gray-200"
+                                            style={{
+                                                height: `calc(${100 / (steps.length - 1)}% - 0.5rem)`
+                                            }}
+                                        >
+                                            <div 
+                                                className="absolute w-full bg-blue-600 transition-all duration-300"
+                                                style={{ 
+                                                    height: index === activeStep ? `${progressPercent}%` : index < activeStep ? '100%' : '0%',
+                                                    boxShadow: index === activeStep ? '0 0 8px rgba(37, 99, 235, 0.3)' : 'none'
+                                                }}
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
                         </div>
-                        
-                        <div className="space-y-3">
+
+                        <div className="space-y-8 pl-16 lg:pl-0">
                             {steps.map((step, index) => (
                                 <button
                                     key={index}
-                                    className={`w-full text-left p-3 sm:p-4 rounded-xl transition-all duration-300 relative ${
+                                    className={`w-full text-left p-4 rounded-xl transition-all duration-300 relative ${
                                         activeStep === index 
                                             ? 'bg-white shadow-lg border border-gray-200/50' 
                                             : 'hover:bg-white/50'
@@ -208,7 +235,7 @@ const CollectionProcess = () => {
                         </div>
                     </div>
 
-                    <div className="w-full lg:w-2/3 relative min-h-[350px] sm:min-h-[400px] lg:min-h-[300px] bg-white rounded-2xl shadow-lg border border-gray-200/50 overflow-hidden group">
+                    <div className="w-full lg:w-2/3 relative min-h-[300px] sm:min-h-[300px] lg:min-h-[300px] bg-white rounded-2xl shadow-lg border border-gray-200/50 overflow-hidden group">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         
                         {steps.map((step, index) => (
